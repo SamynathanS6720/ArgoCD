@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-deployment
-  namespace: application
+  name: server-demo
+  namespace: default
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: myapp
+      app: web
   template:
     metadata:
       labels:
-        app: myapp
+        app: web
     spec:
       containers:
         - name: back-end
           image: samynathan/argo_cd_pull_request:client
           ports:
-            - containerPort: 8080
+            - containerPort: 80
