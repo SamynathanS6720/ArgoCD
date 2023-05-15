@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: back-end
-          image: 45456516486.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
+          image: samynathan/argo_cd_pull_request:client
           ports:
             - containerPort: 80
