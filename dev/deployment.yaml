@@ -7,11 +7,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: web
+      app: server-demo
   template:
     metadata:
       labels:
-        app: web
+        app: server-demo
     spec:
       containers:
         - name: back-end
