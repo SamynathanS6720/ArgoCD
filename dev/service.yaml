@@ -4,7 +4,7 @@ metadata:
   name: backend-service
 spec:
   selector:
-    app: server-demo
+    app: web
   ports:
   - port: 8080  
     protocal: TCP
